@@ -1,3 +1,35 @@
+Restaurant Website
+
+A modern and responsive restaurant website built with **React.js**.  
+This project provides a clean, elegant UI for showcasing a restaurant’s menu, chef, gallery, and contact information.  
+
+---
+
+ Features
+- Responsive design for desktop and mobile  
+- Interactive navigation bar  
+- Beautiful landing page with video background  
+- Menu section with styled items  
+- Chef and About Us sections  
+- Gallery slider for food images  
+- Contact / Find Us page  
+- Reusable components and clean folder structure  
+
+---
+
+Technologies Used
+- React.js  
+- CSS3  
+- JavaScript (ES6+)  
+
+---
+
+## 📦 Installation & Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/iSamerRizq74/Restaurant.git
+   cd Restaurant
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
