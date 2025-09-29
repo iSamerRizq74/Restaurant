@@ -32,15 +32,25 @@ const Gallery = () => {
         <SubHeading title={"Instagram"} />
         <h1 className=" headtext__cormorant">Photo Gallery</h1>
         <p
-          className=" p__opensans"
+          className="p__opensans"
           style={{ color: "#aaa", marginTop: "2rem" }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
-          mattis ipsum turpis elit elit scelerisque egestas mu.
+          Step into our world through these snapshots of culinary excellence. Each photo captures the essence of our restaurant - from the artistry of our dishes to the warmth of our dining experience. Follow us for daily updates and behind-the-scenes moments.
         </p>
-        <button type="button" className=" custom__button">
-          View More
-        </button>
+        <div className="instagram-button-container">
+          <button
+            type="button"
+            className="custom__button instagram-button"
+            onMouseEnter={(e) => {
+              e.target.innerHTML = '<BsInstagram className="instagram-icon" />';
+            }}
+            onMouseLeave={(e) => {
+              e.target.innerHTML = '<BsInstagram className="instagram-icon" /> View More';
+            }}
+          >
+            <BsInstagram className="instagram-icon" /> View More
+          </button>
+        </div>
       </div>
 
       <div className="app__gallery-images ">

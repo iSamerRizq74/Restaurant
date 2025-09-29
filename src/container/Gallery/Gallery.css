@@ -16,8 +16,36 @@
   padding: 2rem;
 }
 
-.app__gallery-content button {
+.instagram-button-container {
   margin-top: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.instagram-button {
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram-button .instagram-icon {
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.instagram-button:hover .instagram-icon {
+  opacity: 1;
+}
+
+.instagram-button:hover span {
+  opacity: 0;
 }
 
 .app__gallery-images {

@@ -5,15 +5,21 @@ import "./Laurels.css";
 
 
 
-const AwardCard =({award:{imgUrl,title,subtitle}})=>(
-  <div className="app__laurels_awards-card">
-    <img src={imgUrl} alt="awardimg" />
-    <div className="app__laurels_awards-card_content ">
-      <p className=" p__cormorant" style={{color:'#dcca87'}}> {title} </p>
-      <p className=" p__cormorant" style={{color:'#dcca87'}}> {subtitle} </p>
+const AwardCard = ({award: {title, subtitle}}) => {
+  // Split the title into Roman numeral and the rest
+  const [romanNumeral, ...restOfTitle] = title.split(' ');
+  const awardTitle = restOfTitle.join(' ');
+  
+  return (
+    <div className="app__laurels_awards-card">
+      <div className="roman-numeral">{romanNumeral}</div>
+      <div className="app__laurels_awards-card_content">
+        <p className="p__cormorant" style={{color:'#dcca87'}}>{awardTitle}</p>
+        <p className="p__opensans" style={{color:'#aaa'}}>{subtitle}</p>
+      </div>
     </div>
-  </div>
-)
+  );
+}
 
 
 
@@ -23,8 +29,13 @@ const Laurels = () => (
       <SubHeading title='Awards & recognition'/>
       <h1 className=" headtext__cormorant">Our Laurels</h1>
 
-      <div className=" app__laurels_awards">
-        {data.awards.map((award)=> <AwardCard award={award} key={award.title}/>)}
+      <div className="app__laurels_awards">
+        {data.awards.map((award) => (
+          <AwardCard 
+            award={award} 
+            key={award.title}
+          />
+        ))}
       </div>
     </div>
 

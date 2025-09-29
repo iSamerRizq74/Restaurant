@@ -10,17 +10,17 @@ const FindUs = () => (
         Find Us
       </h1>
       <div className=" app__wrapper-content">
-        <p className=" p__opensans">
-          Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG
+        <p className="p__opensans">
+          Nile Corniche, Zamalek, Cairo, Egypt
         </p>
         <p
-          className=" p__cormorant "
+          className="p__cormorant"
           style={{ color: "#dcca87", margin: "2rem 0" }}
         >
           Opening Hours
         </p>
-        <p className=" p__opensans">Mon - Fri: 10:00 am - 02:00 am</p>
-        <p className=" p__opensans">Sat - Sun: 10:00 am - 03:00 am </p>
+        <p className="p__opensans">Sat - Wed: 10:00 am - 01:00 am</p>
+        <p className="p__opensans">Thu - Fri: 10:00 am - 02:00 am</p>
       </div>
       <button className=" custom__button" style={{ marginTop: "2rem" }}>
         Visit Us

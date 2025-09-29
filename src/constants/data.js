@@ -58,24 +58,20 @@ const cocktails = [
 
 const awards = [
   {
-    imgUrl: images.award02,
-    title: 'Bib Gourmond',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'I. Best New Restaurant',
+    subtitle: 'Awarded by Cairo Dining Guide for exceptional new culinary experiences.',
   },
   {
-    imgUrl: images.award01,
-    title: 'Rising Star',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'II. Chef\'s Choice',
+    subtitle: 'Recognized by the Egyptian Culinary Association for innovative dishes.',
   },
   {
-    imgUrl: images.award05,
-    title: 'AA Hospitality',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'III. Excellence in Service',
+    subtitle: 'Awarded for outstanding hospitality and customer experience.',
   },
   {
-    imgUrl: images.award03,
-    title: 'Outstanding Chef',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'IV. Sustainable Restaurant',
+    subtitle: 'Recognized for our commitment to sustainability and local sourcing.',
   },
 ];
 
